@@ -11,26 +11,20 @@ $user = 'root';
 $password = '';
 $db = 'userrecord_db';
 
-$db = new mysqli('localhost', $user, $password, $db) or die("Unable to connect");
+$name = 'name';
+$email = 'email';
+$message = 'message';
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-}
 
-// Inserting user data into the SQL table
-// Using real_escape_string to take care of inputted special characters
-$sql = "INSERT INTO userrecord_table (name, email, message) VALUES ('{$db->real_escape_string($_POST['name'])},
-    '{$db->real_escape_string($_POST['email'])},
-    '{$db->real_escape_string($_POST['message'])}";
-$insert = $db->query($sql);
+$conn = new mysqli('localhost', $user, $password, $db) or die("Connection Error: " . mysqli_error($conn));
 
-// Print response from MySQL
-if ($insert) {
-    echo "Success! Row ID: {$db->insert_id}";
-}
-else {
+
+
+mysqli_query($conn, "INSERT INTO userrecord_table (name, email, message) VALUES ('" . $name. "', '" . $email. "','" . $message. "')");
+$insert_id = mysqli_insert_id($conn);
+if(!empty($insert_id)) {
+    $message = "Your contact information is saved successfully";
+} else {
     die("Error: {$db->errno} : {$db->error}");
 
     $db -> close();
