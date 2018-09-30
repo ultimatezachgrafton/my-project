@@ -15,12 +15,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/", name="Contact us")
+     * @Route("/", name="Contact Us!")
      */
     public function index() {
 
         // show contact form
-        $form = $this->createForm(ContactForm::class);
+        // $form = $this->createForm(ContactForm::class);
         return $this->render('contact/index.html.twig', [
             'our_form' => $form->createView(),
         ]);

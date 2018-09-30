@@ -15,10 +15,7 @@ $name = 'name';
 $email = 'email';
 $message = 'message';
 
-
 $conn = new mysqli('localhost', $user, $password, $db) or die("Connection Error: " . mysqli_error($conn));
-
-
 
 mysqli_query($conn, "INSERT INTO userrecord_table (name, email, message) VALUES ('" . $name. "', '" . $email. "','" . $message. "')");
 $insert_id = mysqli_insert_id($conn);
