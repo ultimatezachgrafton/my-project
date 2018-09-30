@@ -24,6 +24,14 @@ class ContactController extends AbstractController
         return $this->render('contact/index.html.twig', [
             'our_form' => $form->createView(),
         ]);
+        // to do: make datetime and id auto-generate: uniqid()
+        // persist the request into the SQL database
+        // show the records (one at a time w pagination links for more), new records, and specific records in their own paths
+        // add anti-bot protection on the contact form
+        // style the contact request display page
+        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new, or all contact requests
+        // mark a contact request as read when displayed (set isRead field to true)
+
     }
 
     /**
