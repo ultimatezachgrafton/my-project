@@ -9,28 +9,41 @@
 namespace App\Controller;
 
 use App\Form\ContactForm;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
-class ContactController extends AbstractController
+class ContactController extends Controller
 {
     /**
      * @Route("/", name="Contact Us!")
      */
-    public function index() {
+    public function index(Request $request)
+    {
+        // Here we create the contact form:
+        $form = $this->createFormBuilder()
+            ->add('name', TextType::class)
+            ->add('email', EmailType::class)
+            ->add('message', TextType::class)
+            ->add('submit', SubmitType::class)
+            ->getForm();
 
-        // show contact form
-        // $form = $this->createForm(ContactForm::class);
+        $form->handleRequest($request);
+
         return $this->render('contact/index.html.twig', [
-            'our_form' => $form->createView(),
-        ]);
-        // to do: make datetime and id auto-generate: uniqid()
-        // persist the request into the SQL database
+            'contact_form' => $form->createView() ]);
+
+        // to do:
         // show the records (one at a time w pagination links for more), new records, and specific records in their own paths
         // add anti-bot protection on the contact form
         // style the contact request display page
-        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new, or all contact requests
+        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new,
+                // or all contact requests
         // mark a contact request as read when displayed (set isRead field to true)
+        // set character limits to input fields
 
     }
 
@@ -50,6 +63,7 @@ class ContactController extends AbstractController
      */
     public function showNewRecords() {
 
+        // Newest Record shows the newest id record entered.
         return new Response('Newest Record:');
     }
 
@@ -58,7 +72,7 @@ class ContactController extends AbstractController
      */
     public function showIndividualRecords($uuid) {
 
-        //Record {uuid}:
+        //Record {uuid}: shows the specific record corresponding to the id entered
         return new Response(sprintf(
             'Record: ',
             $uuid

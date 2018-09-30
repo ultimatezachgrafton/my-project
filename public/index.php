@@ -38,13 +38,3 @@ $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);
-?>
-
-<html>
-<form name = "contact_form" id ="contact_form" method="post" action="">
-    <input name = "name" type="text">
-    <input email = "email" type="email">
-    <input message = "message" type = "textArea">
-    <input type = "submit" name="submit" value = "Submit">
-</form>
-</html>
