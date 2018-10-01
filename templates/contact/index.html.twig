@@ -1,16 +1,20 @@
 {% extends 'base.html.twig' %}
 
-        {% block body %}
-<div class="container">
+{% block head %}
 
-        {{ form(contact_form) }}
-
-</div>
 
 {% endblock %}
+
+{% block body %}
+
+     {{ form(contact_form) }}
+
+{% endblock %}
+
 
 {% block stylesheets %}
 <style>
 
 </style>
 {% endblock %}
+

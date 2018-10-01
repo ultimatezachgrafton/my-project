@@ -15,6 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\Response;
 
 class ContactController extends Controller
 {
@@ -37,11 +38,12 @@ class ContactController extends Controller
             'contact_form' => $form->createView() ]);
 
         // to do:
+        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new,
+        // or all contact requests
         // show the records (one at a time w pagination links for more), new records, and specific records in their own paths
         // add anti-bot protection on the contact form
         // style the contact request display page
-        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new,
-                // or all contact requests
+
         // mark a contact request as read when displayed (set isRead field to true)
         // set character limits to input fields
 
