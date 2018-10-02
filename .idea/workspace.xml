@@ -78,7 +78,7 @@
         <counts>
           <entry key="php" value="2994" />
           <entry key="sql" value="19" />
-          <entry key="twig" value="842" />
+          <entry key="twig" value="873" />
           <entry key="txt" value="82" />
           <entry key="yaml" value="22" />
         </counts>
@@ -88,7 +88,7 @@
           <entry key="PHP" value="2980" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="SQL" value="33" />
-          <entry key="Twig" value="842" />
+          <entry key="Twig" value="873" />
           <entry key="YAML" value="22" />
         </counts>
       </usages-collector>
@@ -134,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+            <state relative-caret-position="170">
+              <caret line="10" column="118" selection-start-line="10" selection-start-column="118" selection-end-line="10" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -395,7 +395,7 @@
       <workItem from="1538117709801" duration="1895000" />
       <workItem from="1538194991783" duration="12815000" />
       <workItem from="1538295494435" duration="513000" />
-      <workItem from="1538296767361" duration="11834000" />
+      <workItem from="1538296767361" duration="13119000" />
     </task>
     <task id="LOCAL-00001" summary="Progress: main site and contact form created">
       <created>1538116316423</created>
@@ -408,7 +408,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38311000" />
+    <option name="totallyTimeSpent" value="39596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
@@ -577,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="170">
+          <caret line="10" column="118" selection-start-line="10" selection-start-column="118" selection-end-line="10" selection-end-column="118" />
         </state>
       </provider>
     </entry>
