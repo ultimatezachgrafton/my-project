@@ -34,6 +34,8 @@ class ContactController extends Controller
 
         $form->handleRequest($request);
 
+        // FIND HOW TO ADJUST FIELD SIZES USING SYMFONY ABOVE
+
         return $this->render('contact/index.html.twig', [
             'contact_form' => $form->createView() ]);
 
@@ -75,6 +77,11 @@ class ContactController extends Controller
     public function showIndividualRecords($uuid) {
 
         //Record {uuid}: shows the specific record corresponding to the id entered
+        //<form class="navbar-form navbar-left" action="/action_page.php">
+        //                <div class="form-group">
+        //                    <input type="text" class="form-control" placeholder="Input ID number:">
+        //                </div>
+        //            </form>
         return new Response(sprintf(
             'Record: ',
             $uuid
