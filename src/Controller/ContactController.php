@@ -16,8 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Validator\Constraints\Length;
-use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class ContactController extends Controller
 {
@@ -28,26 +27,31 @@ class ContactController extends Controller
     {
         // Here we create the contact form:
         $form = $this->createFormBuilder()
-            ->add('name', TextType::class)
-            ->add('email', EmailType::class)
+            ->add('name', TextType::class, array(
+                'attr' => array('style' => 'width: 200px')),
+
+                // this doesn't actually do anything:
+                new Assert\Length(array(
+                'min'        => 1,
+                'max'        => 20,
+            )))
+            ->add('email', EmailType::class, array(
+                'attr' => array('style' => 'width: 200px')))
             ->add('message', TextType::class)
             ->add('submit', SubmitType::class)
             ->getForm();
 
         $form->handleRequest($request);
 
-        // FIND HOW TO ADJUST FIELD SIZES USING SYMFONY ABOVE
-
         return $this->render('contact/index.html.twig', [
             'contact_form' => $form->createView() ]);
 
         // to do:
-        // add a menu/navigation on top of the contact request display page to allow seamless switching between displaying new,
-        // or all contact requests
+        // cap input length in fields
+        // actually save the data into the SQL table
         // show the records (one at a time w pagination links for more), new records, and specific records in their own paths
         // add anti-bot protection on the contact form
         // style the contact request display page
-
         // mark a contact request as read when displayed (set isRead field to true)
         // set character limits to input fields
 

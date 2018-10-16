@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ae3c02-07c1-4a6f-b369-4c10ef94e4b7" name="Default Changelist" comment="Progress: main site and contact form created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ContactController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,13 +69,13 @@
           <entry key="php" value="23" />
           <entry key="sql" value="2" />
           <entry key="twig" value="5" />
-          <entry key="userrecord_table" value="2" />
+          <entry key="userrecord_table" value="3" />
           <entry key="yaml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="2" />
+          <entry key="Database Element" value="3" />
           <entry key="PHP" value="23" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
@@ -88,7 +85,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="3138" />
+          <entry key="php" value="3319" />
           <entry key="sql" value="19" />
           <entry key="twig" value="1154" />
           <entry key="txt" value="82" />
@@ -97,7 +94,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="3124" />
+          <entry key="PHP" value="3305" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="SQL" value="33" />
           <entry key="Twig" value="1154" />
@@ -116,11 +113,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="357">
+              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
               <folding>
                 <element signature="e#117#142#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4361a97e-62e8-4a11-b82e-dd32c1c2ea1b/schema/userrecord_db/table/userrecord_table">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -411,7 +417,7 @@
       <workItem from="1538296767361" duration="13119000" />
       <workItem from="1539480928859" duration="195000" />
       <workItem from="1539481357165" duration="23000" />
-      <workItem from="1539481404029" duration="8238000" />
+      <workItem from="1539481404029" duration="9347000" />
     </task>
     <task id="LOCAL-00001" summary="Progress: main site and contact form created">
       <created>1538116316423</created>
@@ -424,14 +430,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48052000" />
+    <option name="totallyTimeSpent" value="49161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23714873" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23714873" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -525,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://4361a97e-62e8-4a11-b82e-dd32c1c2ea1b/schema/userrecord_db/table/userrecord_table">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/projects/ContactForm/assignment-001/my-project/vendor/symfony/form/FormRegistry.php" />
     <entry file="file://$PROJECT_DIR$/src/Form/ContactForm.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa14080.15558/ContactFormHandler.php" />
@@ -577,10 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+    <entry file="das://4361a97e-62e8-4a11-b82e-dd32c1c2ea1b/schema/userrecord_db/table/userrecord_table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -591,10 +590,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding>
             <element signature="e#117#142#0#PHP" expanded="true" />
           </folding>
